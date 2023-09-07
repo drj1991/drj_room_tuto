@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Room DB Tuto"
 include(":app")
+include(":dituto")

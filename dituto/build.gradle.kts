@@ -1,15 +1,14 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp")
 }
 
 android {
-    namespace = "com.example.roomdbtuto"
+    namespace = "com.example.dituto"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.roomdbtuto"
+        applicationId = "com.example.dituto"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -67,11 +66,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
-    // Room components
-    implementation("androidx.room:room-ktx:2.5.2")
-    ksp("androidx.room:room-compiler:2.5.2")
-    androidTestImplementation("androidx.room:room-testing:2.5.2")
-
-    api(project(":dituto"))
 }
